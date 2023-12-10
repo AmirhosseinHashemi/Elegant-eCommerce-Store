@@ -1,0 +1,55 @@
+//---------------------------------------------------- Reset some default style
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // 1rem = 16px
+  // 62.5% rem = 10px
+  // 1rem = 10px
+  font-size: 62.5%;
+}
+
+//---------------------------------------------------- Set heading default style
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-poppins;
+}
+
+h1 {
+  font-size: 8rem;
+  letter-spacing: -0.3rem;
+}
+
+h2 {
+  font-size: 7.2rem;
+  letter-spacing: -0.2rem;
+}
+
+h3 {
+  font-size: 5.4rem;
+  letter-spacing: -0.1;
+}
+
+h4 {
+  font-size: 4rem;
+  letter-spacing: -0.04rem;
+}
+
+h5 {
+  font-size: 3.4rem;
+  letter-spacing: -0.06rem;
+}
+
+h6 {
+  font-size: 2.8rem;
+  letter-spacing: -0.06rem;
+}
