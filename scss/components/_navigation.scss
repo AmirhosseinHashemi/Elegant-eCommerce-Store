@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.6rem 3.2rem;
+
+  background: $color-gradient-1;
+}
+
+.nav__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav__btn {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  z-index: 10;
+}
+
+.nav__logo {
+  font-family: $ff-poppins;
+  font-size: $fs-small;
+  font-weight: 500;
+  color: $color-primary-black;
+
+  list-style: 2.4rem;
+}
+
+.nav__shopping-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__shopping-list img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.nav__shopping-list span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 2rem;
+  height: 2rem;
+
+  font-size: $fs-xxs;
+  font-weight: $fw-bold;
+
+  color: $color-secondary-orange;
+  background-color: $color-primary-black;
+
+  border-radius: 50%;
+}

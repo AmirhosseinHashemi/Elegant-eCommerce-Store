@@ -44,3 +44,10 @@ $color-neutral-gray-4: #6c7275;
 $color-neutral-gray-5: #343839;
 $color-neutral-gray-6: #343839;
 $color-neutral-gray-7: #141718;
+
+$color-gradient-1: linear-gradient(
+    0deg,
+    rgba(255, 171, 0, 0.64) 0%,
+    rgba(255, 171, 0, 0.64) 100%
+  ),
+  #fff;

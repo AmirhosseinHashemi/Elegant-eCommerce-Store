@@ -10,6 +10,11 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -31,7 +36,7 @@ h2 {
 
 h3 {
   font-size: 5.4rem;
-  letter-spacing: -0.1;
+  letter-spacing: -0.1rem;
 }
 
 h4 {
@@ -47,6 +52,70 @@ h5 {
 h6 {
   font-size: 2.8rem;
   letter-spacing: -0.06rem;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 3.2rem;
+  background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #fff;
+}
+
+.nav__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav__btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  z-index: 10;
+}
+
+.nav__logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+  list-style: 2.4rem;
+}
+
+.nav__shopping-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav__shopping-list img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.nav__shopping-list span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffab00;
+  background-color: #000000;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
