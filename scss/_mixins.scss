@@ -1,0 +1,35 @@
+@mixin headline--1 {
+  font-size: 8rem;
+  line-height: 8.4rem;
+  letter-spacing: -0.3rem;
+}
+
+@mixin headline--2 {
+  font-size: 7.2rem;
+  line-height: 7.6rem;
+  letter-spacing: -0.2rem;
+}
+
+@mixin headline--3 {
+  font-size: 5.4rem;
+  line-height: 5.8rem;
+  letter-spacing: -0.1rem;
+}
+
+@mixin headline--4 {
+  font-size: 4rem;
+  line-height: 4.4rem;
+  letter-spacing: -0.04rem;
+}
+
+@mixin headline--5 {
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.06rem;
+}
+
+@mixin headline--6 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  letter-spacing: -0.06rem;
+}
