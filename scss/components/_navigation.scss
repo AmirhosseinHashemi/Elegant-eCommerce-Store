@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +20,12 @@
   width: 2.4rem;
   height: 2.4rem;
 
-  z-index: 10;
+  background: url(./../../assets/icons/menu-line-horizontal.svg);
+  z-index: 11;
+}
+
+.nav__btn.close {
+  background: url(../../assets/icons/x.svg);
 }
 
 .nav__logo {
@@ -27,8 +33,6 @@
   font-size: $fs-small;
   font-weight: 500;
   color: $color-primary-black;
-
-  list-style: 2.4rem;
 }
 
 .nav__shopping-list {
@@ -58,4 +62,48 @@
   background-color: $color-primary-black;
 
   border-radius: 50%;
+}
+
+.nav__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: hsla(100%, 100%, 100%, 0.1);
+  backdrop-filter: blur(1rem);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.nav__menu.open {
+  right: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 5rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  text-align: center;
+  list-style: none;
+}
+
+.nav__list li {
+  font-size: $fs-xxs;
+  font-weight: $fw-medium;
+  line-height: $lh-xxs;
+}
+
+.nav__list li a {
+  color: $color-neutral-gray-7;
 }
