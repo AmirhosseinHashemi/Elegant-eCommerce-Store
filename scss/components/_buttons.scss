@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+
+  font-size: $fs-xs;
+  font-weight: $fw-medium;
+  line-height: 2.4rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+
+  border-radius: 0.8rem;
+  background-color: $color-neutral-gray-7;
+  cursor: pointer;
+}
