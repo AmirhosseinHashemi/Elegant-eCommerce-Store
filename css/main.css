@@ -159,7 +159,7 @@ button {
 
 .hero::after {
   content: "";
-  background: url("./../assets/images/Paste_image-mobile-removebg-preview.png") no-repeat bottom;
+  background: url("../../assets/images/Paste_image-mobile-removebg-preview.png") no-repeat bottom;
   position: absolute;
   top: 30rem;
   bottom: 0;
@@ -205,7 +205,7 @@ button {
 .brands__list {
   display: flex;
   gap: 1.6rem;
-  overflow-x: auto;
+  overflow-x: hidden;
   list-style: none;
 }
 

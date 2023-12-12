@@ -1,0 +1,33 @@
+.brands {
+  padding: 2.4rem 3.2rem 0 3.2rem;
+}
+
+.brands__list {
+  display: flex;
+  gap: 1.6rem;
+
+  overflow-x: hidden;
+  list-style: none;
+}
+
+.brands__logo {
+  width: 12rem;
+  height: 4rem;
+}
+
+.brands__arrowes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.4rem;
+}
+
+.brands__arrowes button {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.brands__icon.active path {
+  fill: #000;
+}
