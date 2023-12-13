@@ -12,6 +12,7 @@
 .btn--cart {
   @include flex-row-center();
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .btn--number {
@@ -27,4 +28,19 @@
 
   background-color: $color-primary-black;
   border-radius: 50%;
+}
+
+.btn--wishlist {
+  width: 3.2rem;
+  height: 3.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+
+  border-radius: 3.2rem;
+  background: #fff;
+  box-shadow: 0 0.8rem 1.6rem -0.8rem rgba(15, 15, 15, 0.12);
+  cursor: pointer;
 }
