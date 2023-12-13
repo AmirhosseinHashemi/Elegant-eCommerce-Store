@@ -94,7 +94,7 @@ ul {
 
 .nav__menu.open {
   right: 0;
-  height: 81.2rem;
+  min-height: 81.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -160,7 +160,8 @@ ul {
   align-items: center;
 }
 
-.nav__item img {
+.nav__arrow {
+  transition: all 0.3s;
   justify-self: flex-end;
 }
 
@@ -176,7 +177,19 @@ ul {
   flex-direction: column;
   gap: 0.8rem;
   height: 0;
-  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.nav__drop-down.open {
+  padding-top: 1.6rem;
+  height: auto;
+  overflow: auto;
+  opacity: 1;
+}
+
+.nav__arrow.rotate {
+  transform: rotate(180deg);
 }
 
 .nav__drop-down a {
