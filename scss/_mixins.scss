@@ -34,3 +34,96 @@
   line-height: 3.4rem;
   letter-spacing: -0.06rem;
 }
+
+//---------------------------------------------------- Repeated style related to text
+@mixin text-26($weight) {
+  font-size: 2.6rem;
+  font-weight: $weight;
+  line-height: 4rem;
+}
+
+@mixin text-22($weight) {
+  font-size: 2.2rem;
+  font-weight: $weight;
+  line-height: 3.4rem;
+}
+
+@mixin text-20($weight) {
+  font-size: 2rem;
+  font-weight: $weight;
+  line-height: 3.2rem;
+}
+
+@mixin text-18($weight) {
+  font-size: 1.8rem;
+  font-weight: $weight;
+  line-height: 3rem;
+}
+
+@mixin text-16($weight) {
+  font-size: 1.6rem;
+  font-weight: $weight;
+  line-height: 2.6rem;
+}
+
+@mixin text-14($weight) {
+  font-size: 1.4rem;
+  font-weight: $weight;
+  line-height: 2.2rem;
+}
+
+@mixin text-12($weight) {
+  font-size: 1.2rem;
+  font-weight: $weight;
+  line-height: 2rem;
+}
+
+//---------------------------------------------------- Repeated style related to button's text
+@mixin btn-xl {
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+}
+
+@mixin btn-l {
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+}
+
+@mixin btn-medium {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.04rem;
+}
+
+@mixin btn-small {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.04rem;
+}
+
+@mixin btn-xs {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+//---------------------------------------------------- Repeated style related to logo
+@mixin logo {
+  font-family: $ff-poppins;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $color-primary-black;
+}
+
+//---------------------------------------------------- Repeated style related to put center
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -42,4 +42,12 @@ a:link {
 button {
   background: none;
   border: none;
+  font-family: $ff-inter;
+  font-weight: $fw-medium;
+  text-transform: capitalize;
+}
+
+//---------------------------------------------------- Set ul default style
+ul {
+  list-style: none;
 }

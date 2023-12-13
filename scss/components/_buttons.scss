@@ -1,14 +1,30 @@
 .btn {
   display: inline-block;
 
-  font-size: $fs-xs;
-  font-weight: $fw-medium;
-  line-height: 2.4rem;
   text-align: center;
-  text-transform: capitalize;
   color: #fff;
 
-  border-radius: 0.8rem;
   background-color: $color-neutral-gray-7;
+  border-radius: 0.8rem;
   cursor: pointer;
+}
+
+.btn--cart {
+  @include flex-row-center();
+  gap: 0.5rem;
+}
+
+.btn--number {
+  @include flex-row-center();
+
+  width: 2rem;
+  height: 2rem;
+
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1rem;
+
+  background-color: $color-primary-black;
+  border-radius: 50%;
 }
