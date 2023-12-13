@@ -49,8 +49,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.6rem 3.2rem;
-  background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #fff;
 }
 
 .nav__left {
@@ -359,6 +357,11 @@ ul {
 
 .brands__icon.active path {
   fill: #000;
+}
+
+.header {
+  padding: 1.6rem 3.2rem;
+  background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

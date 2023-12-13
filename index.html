@@ -22,142 +22,152 @@
     <script src="./js/script.js" defer></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="nav">
-      <div class="nav__left">
-        <button
-          class="nav__btn nav__btn--hamburger"
-          type="button"
-          aria-label="menu icon"
-        >
-          <img
-            src="./assets/icons/menu-line-horizontal.svg"
-            alt="hamburger menu"
-          />
-        </button>
-        <span aria-label="logo" class="nav__logo">3legant.</span>
-      </div>
-
-      <!-- start mobile menu nav -->
-      <div class="nav__menu">
-        <div class="nav__top">
-          <div class="nav__header">
-            <span aria-label="logo" class="nav__logo">3legant.</span>
-            <button class="nav__btn nav__btn--close" aria-label="close button">
-              <svg
-                aria-label="close icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#0a0a0a"
-                viewBox="0 0 256 256"
-              >
-                <path
-                  d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-
-          <form>
-            <label for="search"></label>
-            <input
-              class="nav__search-box"
-              type="search"
-              name=""
-              id="search"
-              placeholder="Search"
+    <header class="header">
+      <!-- Navigation Bar -->
+      <nav class="nav">
+        <div class="nav__left">
+          <button
+            class="nav__btn nav__btn--hamburger"
+            type="button"
+            aria-label="menu icon"
+          >
+            <img
+              src="./assets/icons/menu-line-horizontal.svg"
+              alt="hamburger menu"
             />
-          </form>
-
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#">Home</a>
-            </li>
-            <li class="nav__item">
-              <button class="nav__link">Shop</button>
-              <img
-                class="nav__arrow"
-                src="./assets/icons/chevron-down.svg"
-                alt="chevron-down"
-              />
-              <div class="nav__drop-down">
-                <a href="#">Earbuds</a>
-                <a href="#">Headband</a>
-                <a href="#">Accessories</a>
-              </div>
-            </li>
-            <li class="nav__item">
-              <button class="nav__link">Product</button>
-              <img
-                class="nav__arrow"
-                src="./assets/icons/chevron-down.svg"
-                alt="chevron-down"
-              />
-              <div class="nav__drop-down">
-                <a href="#">Sony - WH-CH720N Wireless Noise Canceling</a>
-                <a href="#">Skullcandy - Rail True Wireless Earbuds</a>
-                <a href="#">Beats Studio Pro</a>
-              </div>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Contact Us</a>
-            </li>
-          </ul>
+          </button>
+          <span aria-label="logo" class="nav__logo">3legant.</span>
         </div>
 
-        <div class="nav__bottom">
-          <div class="nav__detail">
-            <p>Cart</p>
-            <button class="btn--cart" aria-label="cart button">
-              <img
-                src="./assets/icons/shopping bag.svg"
-                alt="shopping bag logo"
-              />
-              <span class="btn--number" aria-label="number of shopping list"
-                >2</span
+        <!-- start mobile menu nav -->
+        <div class="nav__menu">
+          <div class="nav__top">
+            <div class="nav__header">
+              <span aria-label="logo" class="nav__logo">3legant.</span>
+              <button
+                class="nav__btn nav__btn--close"
+                aria-label="close button"
               >
-            </button>
-          </div>
-          <div class="nav__detail">
-            <p>Wishlist</p>
-            <button class="btn--cart" aria-label="wishlist">
-              <img src="./assets/icons/Line.svg" alt="heart icon" />
-              <span class="btn--number" aria-label="number of shopping list"
-                >2</span
-              >
-            </button>
-          </div>
-          <button class="btn">Sign In</button>
-          <ul class="nav__social">
-            <li>
-              <a href="#">
-                <img src="./assets/icons/instagram.svg" alt="instagram link" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/icons/facebook.svg" alt="facebook link" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/icons/youtube.svg" alt="youtube link" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- end mobile menu nav -->
+                <svg
+                  aria-label="close icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#0a0a0a"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
 
-      <button class="nav__cart btn--cart">
-        <img src="./assets/icons/shopping bag.svg" alt="shopping bag logo" />
-        <span class="btn--number" aria-label="number of shopping list">2</span>
-      </button>
-    </nav>
+            <form>
+              <label for="search"></label>
+              <input
+                class="nav__search-box"
+                type="search"
+                name=""
+                id="search"
+                placeholder="Search"
+              />
+            </form>
+
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <button class="nav__link">Shop</button>
+                <img
+                  class="nav__arrow"
+                  src="./assets/icons/chevron-down.svg"
+                  alt="chevron-down"
+                />
+                <div class="nav__drop-down">
+                  <a href="#">Earbuds</a>
+                  <a href="#">Headband</a>
+                  <a href="#">Accessories</a>
+                </div>
+              </li>
+              <li class="nav__item">
+                <button class="nav__link">Product</button>
+                <img
+                  class="nav__arrow"
+                  src="./assets/icons/chevron-down.svg"
+                  alt="chevron-down"
+                />
+                <div class="nav__drop-down">
+                  <a href="#">Sony - WH-CH720N Wireless Noise Canceling</a>
+                  <a href="#">Skullcandy - Rail True Wireless Earbuds</a>
+                  <a href="#">Beats Studio Pro</a>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__bottom">
+            <div class="nav__detail">
+              <p>Cart</p>
+              <button class="btn--cart" aria-label="cart button">
+                <img
+                  src="./assets/icons/shopping bag.svg"
+                  alt="shopping bag logo"
+                />
+                <span class="btn--number" aria-label="number of shopping list"
+                  >2</span
+                >
+              </button>
+            </div>
+            <div class="nav__detail">
+              <p>Wishlist</p>
+              <button class="btn--cart" aria-label="wishlist">
+                <img src="./assets/icons/Line.svg" alt="heart icon" />
+                <span class="btn--number" aria-label="number of shopping list"
+                  >2</span
+                >
+              </button>
+            </div>
+            <button class="btn">Sign In</button>
+            <ul class="nav__social">
+              <li>
+                <a href="#">
+                  <img
+                    src="./assets/icons/instagram.svg"
+                    alt="instagram link"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/icons/facebook.svg" alt="facebook link" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/icons/youtube.svg" alt="youtube link" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end mobile menu nav -->
+
+        <button class="nav__cart btn--cart">
+          <img src="./assets/icons/shopping bag.svg" alt="shopping bag logo" />
+          <span class="btn--number" aria-label="number of shopping list"
+            >2</span
+          >
+        </button>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <section class="hero">
       <div class="hero__content">
         <h1 class="hero__title">
           Listen to<br />the <span>amazing</span><br />music sound.
@@ -165,10 +175,10 @@
         <p class="hero__caption">Experience music like never before</p>
         <a class="hero__btn btn" href="#">Shopping Now</a>
       </div>
-    </header>
+    </section>
 
     <!-- Brands -->
-    <section class="brands" aria-label="brands section">
+    <div class="brands" aria-label="brands section">
       <ul class="brands__list">
         <li>
           <img
@@ -249,6 +259,6 @@
           </svg>
         </button>
       </div>
-    </section>
+    </div>
   </body>
 </html>
