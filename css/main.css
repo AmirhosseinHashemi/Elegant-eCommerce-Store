@@ -341,12 +341,13 @@ ul {
 
 .brands {
   padding: 2.4rem 3.2rem 0 3.2rem;
+  overflow: hidden;
 }
 
 .brands__list {
   display: flex;
   gap: 1.6rem;
-  overflow-x: hidden;
+  transition: all 2s;
   list-style: none;
 }
 
