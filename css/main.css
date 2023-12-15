@@ -44,6 +44,10 @@ ul {
   list-style: none;
 }
 
+section {
+  padding: 3.2rem;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -291,7 +295,8 @@ ul {
 
 .hero {
   position: relative;
-  padding: 4rem 3.2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #fff;
   height: 69.2rem;
 }
@@ -340,7 +345,8 @@ ul {
 }
 
 .brands {
-  padding: 2.4rem 3.2rem 0 3.2rem;
+  padding-top: 2.4rem;
+  padding-bottom: 0;
   overflow: hidden;
 }
 
@@ -464,10 +470,6 @@ ul {
 
 .product__view--3::after {
   content: url(../../assets/images/product-3.png);
-}
-
-.carousel {
-  padding: 3.2rem 3.2rem 3.2rem 3.2rem;
 }
 
 .carousel__slides {
