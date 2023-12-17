@@ -81,28 +81,33 @@
 //---------------------------------------------------- Repeated style related to button's text
 @mixin btn-xl {
   font-size: 2.6rem;
+  font-weight: $fw-medium;
   line-height: 3.8rem;
 }
 
 @mixin btn-l {
   font-size: 2.2rem;
+  font-weight: $fw-medium;
   line-height: 3.4rem;
 }
 
 @mixin btn-medium {
   font-size: 1.8rem;
+  font-weight: $fw-medium;
   line-height: 3.2rem;
   letter-spacing: -0.04rem;
 }
 
 @mixin btn-small {
   font-size: 1.6rem;
+  font-weight: $fw-medium;
   line-height: 2.8rem;
   letter-spacing: -0.04rem;
 }
 
 @mixin btn-xs {
   font-size: 1.4rem;
+  font-weight: $fw-medium;
   line-height: 2.4rem;
 }
 

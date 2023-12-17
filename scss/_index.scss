@@ -2,3 +2,67 @@
   padding: 1.6rem 3.2rem;
   background: $color-gradient-1;
 }
+
+//---------------------------------------------------- Shop Collection
+.shop {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.shop__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 1.6rem;
+}
+
+.shop > h2 {
+  @include headline--5;
+  text-align: center;
+}
+
+.shop__card {
+  position: relative;
+  background-color: $color-neutral-gray-2;
+}
+
+.shop__card > img {
+  width: 100%;
+}
+
+.shop__content {
+  position: absolute;
+  left: 3.2rem;
+  bottom: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.shop__content > h3 {
+  @include headline--6;
+}
+
+.shop__content > a {
+  @include btn-xs;
+}
+
+.shop__card--1,
+.shop__card--2,
+.shop__card--3 {
+  max-width: 31.1rem;
+}
+
+.shop__card--1 {
+  height: 37.7rem;
+}
+
+.shop__card--2,
+.shop__card--3 {
+  height: 18rem;
+}

@@ -168,6 +168,7 @@ section {
 
 .nav__link {
   font-size: 1.4rem;
+  font-weight: 500;
   line-height: 2.4rem;
   color: #141718;
   justify-self: flex-start;
@@ -195,6 +196,7 @@ section {
 
 .nav__drop-down a {
   font-size: 1.4rem;
+  font-weight: 500;
   line-height: 2.4rem;
   color: #6c7275;
 }
@@ -218,6 +220,7 @@ section {
 
 .nav__detail p {
   font-size: 1.8rem;
+  font-weight: 500;
   line-height: 3.2rem;
   letter-spacing: -0.04rem;
   color: #6c7275;
@@ -234,6 +237,7 @@ section {
 
 .nav__bottom > button {
   font-size: 1.8rem;
+  font-weight: 500;
   line-height: 3.2rem;
   letter-spacing: -0.04rem;
   padding: 1rem 2.6rem;
@@ -293,6 +297,25 @@ section {
   cursor: pointer;
 }
 
+.btn--collection {
+  position: relative;
+  width: 8.8rem;
+  height: 2.4rem;
+  padding-bottom: 0.4rem;
+  color: #121212;
+  border-bottom: 0.1rem solid #121212;
+}
+
+.btn--collection::after {
+  position: absolute;
+  content: url(../assets/icons/arrow-right.svg);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
 .hero {
   position: relative;
   padding-top: 4rem;
@@ -339,6 +362,7 @@ section {
 
 .hero__btn {
   font-size: 1.4rem;
+  font-weight: 500;
   line-height: 2.4rem;
   padding: 1.2rem 5.6rem;
   margin-top: 1.6rem;
@@ -423,6 +447,7 @@ section {
 
 .product__btn {
   font-size: 1.6rem;
+  font-weight: 500;
   line-height: 2.8rem;
   letter-spacing: -0.04rem;
   grid-column: 1/-1;
@@ -476,6 +501,8 @@ section {
   display: flex;
   gap: 1.6rem;
   margin-top: 4rem;
+  padding-left: 0;
+  padding-right: 0;
   overflow: hidden;
 }
 
@@ -513,6 +540,73 @@ section {
 .header {
   padding: 1.6rem 3.2rem;
   background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #fff;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.shop__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 1.6rem;
+}
+
+.shop > h2 {
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.06rem;
+  text-align: center;
+}
+
+.shop__card {
+  position: relative;
+  background-color: #f3f5f7;
+}
+
+.shop__card > img {
+  width: 100%;
+}
+
+.shop__content {
+  position: absolute;
+  left: 3.2rem;
+  bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.shop__content > h3 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  letter-spacing: -0.06rem;
+}
+
+.shop__content > a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.shop__card--1,
+.shop__card--2,
+.shop__card--3 {
+  max-width: 31.1rem;
+}
+
+.shop__card--1 {
+  height: 37.7rem;
+}
+
+.shop__card--2,
+.shop__card--3 {
+  height: 18rem;
 }
 
 /*# sourceMappingURL=main.css.map */
