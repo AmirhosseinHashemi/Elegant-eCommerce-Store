@@ -9,6 +9,7 @@ const carouselSlides = document.querySelectorAll(".carousel__slide");
 const brandsList = document.querySelector(".brands__list");
 const brandsLogo = document.querySelectorAll(".brands__logo");
 const brandsBtn = document.querySelectorAll(".brands__arrowes button");
+const brandsIcon = document.querySelectorAll(".brands__icon");
 
 // Handle mobile menu
 menuBtn.forEach((btn) =>
@@ -58,12 +59,18 @@ carouselDots.forEach((dot) => {
 brandsBtn.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     const clicked = e.target.closest("button");
+    const translateValue = brandsList.scrollWidth - brandsList.clientWidth;
+
+    brandsIcon.forEach((icon) => icon.classList.remove("active"));
 
     if (clicked.dataset.goTo === "start") {
       brandsList.style.transform = "translateX(0px)";
+      brandsIcon[1].classList.add("active");
     }
+
     if (clicked.dataset.goTo === "end") {
-      brandsList.style.transform = "translateX(-489px)";
+      brandsList.style.transform = `translateX(-${translateValue}px)`;
+      brandsIcon[0].classList.add("active");
     }
   });
 });
