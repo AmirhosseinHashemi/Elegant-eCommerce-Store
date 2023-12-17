@@ -5,8 +5,7 @@
 
 //---------------------------------------------------- Shop Collection
 .shop {
-  display: flex;
-  flex-direction: column;
+  @include flex-column-center;
   gap: 1.6rem;
 
   padding-top: 4rem;
@@ -23,7 +22,6 @@
 .shop > h2 {
   @include headline--5;
   color: $color-primary-black;
-  text-align: center;
 }
 
 .shop__card {
@@ -68,4 +66,74 @@
 .shop__card--2,
 .shop__card--3 {
   height: 18rem;
+}
+
+//---------------------------------------------------- Best Seller
+.best {
+  @include flex-column-center;
+  gap: 1.6rem;
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.best__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.8rem;
+  row-gap: 1.6rem;
+}
+
+.best > h2 {
+  @include headline--5;
+  color: $color-primary-black;
+}
+
+.best__item {
+  width: 15.2rem;
+}
+
+.best__view {
+  height: 20.3rem;
+}
+
+.best__content > p {
+  @include text-14($fw-semiBold);
+  color: $color-neutral-gray-7;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.best__view--1::after {
+  content: url(../assets/images/best-1.png);
+}
+
+.best__view--2::after {
+  content: url(../assets/images/best-2.png);
+}
+
+.best__view--3::after {
+  content: url(../assets/images/best-3.png);
+}
+
+.best__view--4::after {
+  content: url(../assets/images/best-4.png);
+}
+
+.best__view--5::after {
+  content: url(../assets/images/best-5.png);
+}
+
+.best__view--6::after {
+  content: url(../assets/images/best-6.png);
+}
+
+.best__view--7::after {
+  content: url(../assets/images/best-7.png);
+}
+
+.best__view--8::after {
+  content: url(../assets/images/best-8.png);
 }

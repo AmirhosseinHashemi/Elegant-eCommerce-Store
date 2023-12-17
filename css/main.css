@@ -548,6 +548,8 @@ section {
 .shop {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.6rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -565,7 +567,6 @@ section {
   line-height: 3.8rem;
   letter-spacing: -0.06rem;
   color: #000000;
-  text-align: center;
 }
 
 .shop__card {
@@ -613,6 +614,80 @@ section {
 .shop__card--2,
 .shop__card--3 {
   height: 18rem;
+}
+
+.best {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.best__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.8rem;
+  row-gap: 1.6rem;
+}
+
+.best > h2 {
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.06rem;
+  color: #000000;
+}
+
+.best__item {
+  width: 15.2rem;
+}
+
+.best__view {
+  height: 20.3rem;
+}
+
+.best__content > p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: #141718;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.best__view--1::after {
+  content: url(../assets/images/best-1.png);
+}
+
+.best__view--2::after {
+  content: url(../assets/images/best-2.png);
+}
+
+.best__view--3::after {
+  content: url(../assets/images/best-3.png);
+}
+
+.best__view--4::after {
+  content: url(../assets/images/best-4.png);
+}
+
+.best__view--5::after {
+  content: url(../assets/images/best-5.png);
+}
+
+.best__view--6::after {
+  content: url(../assets/images/best-6.png);
+}
+
+.best__view--7::after {
+  content: url(../assets/images/best-7.png);
+}
+
+.best__view--8::after {
+  content: url(../assets/images/best-8.png);
 }
 
 /*# sourceMappingURL=main.css.map */
