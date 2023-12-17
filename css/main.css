@@ -24,7 +24,6 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #121212;
   font-style: normal;
 }
 
@@ -178,6 +177,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  padding-left: 0.8rem;
   height: 0;
   overflow: hidden;
   transition: all 0.3s;
@@ -345,6 +345,7 @@ section {
   font-size: 4rem;
   line-height: 4.4rem;
   letter-spacing: -0.04rem;
+  color: #121212;
   text-align: center;
 }
 
@@ -369,6 +370,9 @@ section {
 }
 
 .brands {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
   padding-top: 2.4rem;
   padding-bottom: 0;
   overflow: hidden;
@@ -391,7 +395,6 @@ section {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 2.4rem;
 }
 
 .brands__arrowes button {
@@ -501,8 +504,7 @@ section {
   display: flex;
   gap: 1.6rem;
   margin-top: 4rem;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -535,6 +537,7 @@ section {
   font-size: 3.4rem;
   line-height: 3.8rem;
   letter-spacing: -0.06rem;
+  color: #000000;
 }
 
 .header {
@@ -561,6 +564,7 @@ section {
   font-size: 3.4rem;
   line-height: 3.8rem;
   letter-spacing: -0.06rem;
+  color: #000000;
   text-align: center;
 }
 
@@ -586,12 +590,14 @@ section {
   font-size: 2.8rem;
   line-height: 3.4rem;
   letter-spacing: -0.06rem;
+  color: #121212;
 }
 
 .shop__content > a {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 2.4rem;
+  color: #121212;
 }
 
 .shop__card--1,

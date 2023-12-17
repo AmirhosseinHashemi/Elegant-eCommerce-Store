@@ -2,8 +2,7 @@
   display: flex;
   gap: 1.6rem;
   margin-top: 4rem;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -35,4 +34,5 @@
 
 .carousel__header h2 {
   @include headline--5;
+  color: $color-primary-black;
 }

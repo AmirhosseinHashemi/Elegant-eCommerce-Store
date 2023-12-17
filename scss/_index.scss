@@ -22,6 +22,7 @@
 
 .shop > h2 {
   @include headline--5;
+  color: $color-primary-black;
   text-align: center;
 }
 
@@ -46,10 +47,12 @@
 
 .shop__content > h3 {
   @include headline--6;
+  color: $color-headline;
 }
 
 .shop__content > a {
   @include btn-xs;
+  color: $color-headline;
 }
 
 .shop__card--1,
