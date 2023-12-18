@@ -137,3 +137,86 @@
 .best__view--8::after {
   content: url(../assets/images/best-8.png);
 }
+
+//---------------------------------------------------- Off Section
+.off {
+  padding-bottom: 0;
+  background: $color-gradient-2;
+}
+
+.off__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+.off__badge {
+  font-size: 1.6rem;
+  font-weight: $fw-bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-secondary-blue;
+}
+
+.off__title {
+  @include headline--5;
+}
+
+.off__caption {
+  @include text-14($fw-regular);
+}
+
+.off__title,
+.off__caption {
+  color: $color-headline;
+}
+
+.off__btn {
+  @include btn-xs;
+  padding: 0.6rem 4rem;
+}
+
+.off__timer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.6rem;
+  row-gap: 1.2rem;
+
+  margin: 0.8rem 0;
+}
+
+.off__timer > p:first-child {
+  @include text-16($fw-regular);
+  color: $color-neutral-gray-7;
+  grid-column: 1 / -1;
+}
+
+.off__box {
+  display: flex;
+  flex-direction: column;
+  width: 6rem;
+  height: 8rem;
+}
+
+.off__time {
+  @include flex-row-center;
+  @include headline--5;
+  font-weight: $fw-medium;
+  padding: 1.1rem 0.9rem 1.1rem 1rem;
+  background-color: $color-neutral-gray-1;
+  color: $color-neutral-gray-7;
+}
+
+.off__box > span {
+  @include text-12($fw-regular);
+  align-self: center;
+}
+
+.off__img {
+  margin: 3.2rem -3.2rem 0 -3.2rem;
+}
+
+.off__img img {
+  width: 100%;
+}

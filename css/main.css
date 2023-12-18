@@ -690,4 +690,99 @@ section {
   content: url(../assets/images/best-8.png);
 }
 
+.off {
+  padding-bottom: 0;
+  background: linear-gradient(0deg, rgba(255, 171, 0, 0.4) 0%, rgba(255, 171, 0, 0.4) 100%), #fff;
+}
+
+.off__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+.off__badge {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #377dff;
+}
+
+.off__title {
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.06rem;
+}
+
+.off__caption {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+.off__title,
+.off__caption {
+  color: #121212;
+}
+
+.off__btn {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  padding: 0.6rem 4rem;
+}
+
+.off__timer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.6rem;
+  row-gap: 1.2rem;
+  margin: 0.8rem 0;
+}
+
+.off__timer > p:first-child {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: #141718;
+  grid-column: 1/-1;
+}
+
+.off__box {
+  display: flex;
+  flex-direction: column;
+  width: 6rem;
+  height: 8rem;
+}
+
+.off__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.4rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.06rem;
+  font-weight: 500;
+  padding: 1.1rem 0.9rem 1.1rem 1rem;
+  background-color: #fefefe;
+  color: #141718;
+}
+
+.off__box > span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  align-self: center;
+}
+
+.off__img {
+  margin: 3.2rem -3.2rem 0 -3.2rem;
+}
+
+.off__img img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

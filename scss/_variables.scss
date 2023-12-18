@@ -32,4 +32,11 @@ $color-gradient-1: linear-gradient(
   ),
   #fff;
 
+$color-gradient-2: linear-gradient(
+    0deg,
+    rgba(255, 171, 0, 0.4) 0%,
+    rgba(255, 171, 0, 0.4) 100%
+  ),
+  #fff;
+
 $color-headline: #121212;
