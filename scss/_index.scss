@@ -220,3 +220,59 @@
 .off__img img {
   width: 100%;
 }
+
+//---------------------------------------------------- Newsfeed Section
+.newsfeed {
+  @include flex-column-center;
+  gap: 1.6rem;
+
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.newsfeed__label {
+  font-size: 1.6rem;
+  font-weight: $fw-bold;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+}
+
+.newsfeed__label,
+.newsfeed__id {
+  color: $color-neutral-gray-4;
+}
+
+.newsfeed__title,
+.newsfeed__caption {
+  color: $color-headline;
+}
+
+.newsfeed__title {
+  @include headline--5;
+}
+
+.newsfeed__caption {
+  @include text-14($fw-regular);
+}
+
+.newsfeed__id {
+  @include headline--7;
+}
+
+.newsfeed__gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.6rem;
+
+  margin-top: 2.6rem;
+}
+
+.newsfeed__gallery > picture {
+  max-width: 31.2rem;
+  max-height: 31.2rem;
+}
+
+.newsfeed__gallery img {
+  width: 100%;
+}

@@ -35,6 +35,12 @@
   letter-spacing: -0.06rem;
 }
 
+@mixin headline--7 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.06rem;
+}
+
 //---------------------------------------------------- Repeated style related to text
 @mixin text-26($weight) {
   font-size: 2.6rem;
