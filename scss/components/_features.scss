@@ -1,0 +1,33 @@
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.8rem;
+  row-gap: 2.4rem;
+}
+
+.features__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+
+  min-width: 15.2rem;
+  padding: 3.2rem 1.6rem;
+  background-color: $color-neutral-gray-2;
+}
+
+.features__icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.features__title {
+  @include text-14($fw-semiBold);
+  color: $color-neutral-gray-7;
+}
+
+.features__sub-title {
+  @include text-14($fw-regular);
+  color: $color-neutral-gray-4;
+}
