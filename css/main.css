@@ -635,6 +635,115 @@ section {
   color: #6c7275;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 4.8rem 3.2rem;
+  background-color: #141718;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer__slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.footer__logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000000;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.footer__line {
+  height: 0.1rem;
+  width: 2.4rem;
+  background-color: #6c7275;
+}
+
+.footer__shop-name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #e8ecef;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.footer__list a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #fff;
+}
+
+.footer__bottom-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  padding-top: 2.4rem;
+}
+
+.footer__bottom-nav > a {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  border-top: 0.05rem solid #6c7275;
+}
+
+.footer__copyright {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.8rem;
+}
+
+.footer__copyright > a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.footer__copyright > a:first-child {
+  justify-self: flex-end;
+}
+
+.footer__copyright > p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #e8ecef;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.author {
+  color: #6c7275;
+}
+
 .header {
   padding: 1.6rem 3.2rem;
   background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #fff;

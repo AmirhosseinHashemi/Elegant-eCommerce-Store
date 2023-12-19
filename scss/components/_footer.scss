@@ -1,0 +1,100 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+
+  padding: 4.8rem 3.2rem;
+  background-color: $color-neutral-gray-7;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer__slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.footer__logo {
+  @include logo;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.footer__line {
+  height: 0.1rem;
+  width: 2.4rem;
+  background-color: $color-neutral-gray-4;
+}
+
+.footer__shop-name {
+  @include text-14($fw-regular);
+  color: $color-neutral-gray-3;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.footer__list a {
+  @include text-14($fw-regular);
+  color: #fff;
+}
+
+.footer__bottom-nav {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  padding-top: 2.4rem;
+}
+
+.footer__bottom-nav > a {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  border-top: 0.05rem solid $color-neutral-gray-4;
+}
+
+.footer__copyright {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.8rem;
+}
+
+.footer__copyright > a {
+  @include text-14($fw-medium);
+  font-family: $ff-poppins;
+  color: #fff;
+}
+
+.footer__copyright > a:first-child {
+  justify-self: flex-end;
+}
+
+.footer__copyright > p {
+  @include text-12($fw-regular);
+  color: $color-neutral-gray-3;
+  text-align: center;
+
+  grid-column: 1 / -1;
+}
+
+.author {
+  color: $color-neutral-gray-4;
+}
