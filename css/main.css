@@ -369,6 +369,14 @@ section {
   margin-top: 1.6rem;
 }
 
+@media only screen and (max-width: 370px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
+  .hero__caption {
+    font-size: 1.3rem;
+  }
+}
 .brands {
   display: flex;
   flex-direction: column;
@@ -577,6 +585,11 @@ section {
   color: #6c7275;
 }
 
+@media only screen and (max-width: 370px) {
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+}
 .cta {
   display: flex;
   flex-direction: column;
@@ -593,6 +606,7 @@ section {
   line-height: 3.4rem;
   letter-spacing: -0.06rem;
   color: #121212;
+  text-align: center;
 }
 
 .cta__caption {
@@ -771,6 +785,7 @@ section {
   line-height: 3.8rem;
   letter-spacing: -0.06rem;
   color: #000000;
+  text-align: center;
 }
 
 .shop__card {
@@ -842,6 +857,7 @@ section {
   line-height: 3.8rem;
   letter-spacing: -0.06rem;
   color: #000000;
+  text-align: center;
 }
 
 .best__item {
@@ -1021,6 +1037,7 @@ section {
   font-size: 3.4rem;
   line-height: 3.8rem;
   letter-spacing: -0.06rem;
+  text-align: center;
 }
 
 .newsfeed__caption {
@@ -1049,6 +1066,12 @@ section {
 
 .newsfeed__gallery img {
   width: 100%;
+}
+
+@media only screen and (max-width: 370px) {
+  .off__timer {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

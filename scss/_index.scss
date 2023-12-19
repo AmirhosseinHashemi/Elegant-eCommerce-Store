@@ -22,6 +22,7 @@
 .shop > h2 {
   @include headline--5;
   color: $color-primary-black;
+  text-align: center;
 }
 
 .shop__card {
@@ -87,6 +88,7 @@
 .best > h2 {
   @include headline--5;
   color: $color-primary-black;
+  text-align: center;
 }
 
 .best__item {
@@ -250,6 +252,7 @@
 
 .newsfeed__title {
   @include headline--5;
+  text-align: center;
 }
 
 .newsfeed__caption {
@@ -275,4 +278,11 @@
 
 .newsfeed__gallery img {
   width: 100%;
+}
+
+//---------------------------------------------------- Responsive: width < 375
+@media only screen and (max-width: 370px) {
+  .off__timer {
+    grid-template-columns: 1fr 1fr;
+  }
 }

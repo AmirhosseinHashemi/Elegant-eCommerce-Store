@@ -10,6 +10,7 @@
 .cta__title {
   @include headline--6;
   color: $color-headline;
+  text-align: center;
 }
 
 .cta__caption {
