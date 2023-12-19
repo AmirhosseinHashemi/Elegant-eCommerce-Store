@@ -1,0 +1,49 @@
+.cta {
+  @include flex-column-center;
+  gap: 0.8rem;
+
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+  background-color: #f2f4f6;
+}
+
+.cta__title {
+  @include headline--6;
+  color: $color-headline;
+}
+
+.cta__caption {
+  @include text-14($fw-regular);
+  color: $color-headline;
+  text-align: center;
+}
+
+.cta__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+
+  max-width: 31.1rem;
+  height: 5.2rem;
+
+  border-bottom: 1px solid rgba(108, 114, 117, 0.5);
+  margin-top: 2.4rem;
+}
+
+.cta__input {
+  @include btn-small;
+  flex: 1 0 0;
+
+  background: transparent url(../../assets/icons/email.svg) no-repeat;
+  background-position: left center;
+  color: $color-neutral-gray-4;
+
+  padding-left: 3.2rem;
+  border: none;
+}
+
+.cta__btn {
+  @include btn-small;
+  color: $color-neutral-gray-4;
+}

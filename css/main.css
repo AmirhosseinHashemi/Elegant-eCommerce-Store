@@ -577,6 +577,64 @@ section {
   color: #6c7275;
 }
 
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+  background-color: #f2f4f6;
+}
+
+.cta__title {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  letter-spacing: -0.06rem;
+  color: #121212;
+}
+
+.cta__caption {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #121212;
+  text-align: center;
+}
+
+.cta__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: 31.1rem;
+  height: 5.2rem;
+  border-bottom: 1px solid rgba(108, 114, 117, 0.5);
+  margin-top: 2.4rem;
+}
+
+.cta__input {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  letter-spacing: -0.04rem;
+  flex: 1 0 0;
+  background: transparent url(../../assets/icons/email.svg) no-repeat;
+  background-position: left center;
+  color: #6c7275;
+  padding-left: 3.2rem;
+  border: none;
+}
+
+.cta__btn {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  letter-spacing: -0.04rem;
+  color: #6c7275;
+}
+
 .header {
   padding: 1.6rem 3.2rem;
   background: linear-gradient(0deg, rgba(255, 171, 0, 0.64) 0%, rgba(255, 171, 0, 0.64) 100%), #fff;
