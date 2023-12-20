@@ -12,6 +12,11 @@ const brandsLogo = document.querySelectorAll(".brands__logo");
 const brandsBtn = document.querySelectorAll(".brands__arrowes button");
 const brandsIcon = document.querySelectorAll(".brands__icon");
 
+const day = document.querySelector(".off__time--days");
+const hour = document.querySelector(".off__time--hours");
+const minute = document.querySelector(".off__time--minutes");
+const second = document.querySelector(".off__time--seconds");
+
 // Handle mobile menu
 menuBtn.forEach((btn) =>
   btn.addEventListener("click", function () {
@@ -78,3 +83,22 @@ brandsBtn.forEach((btn) => {
     }
   });
 });
+
+// timer
+
+const timer = function () {
+  const now = new Date();
+  const future = new Date("2024-01-01T00:00:00");
+  const distance = (future.getTime() - now.getTime()) / 1000;
+
+  const d = Math.floor(distance / (24 * 60 * 60));
+  const h = Math.floor((distance % (24 * 60 * 60)) / (60 * 60));
+  const m = Math.floor(((distance % (24 * 60 * 60)) % (60 * 60)) / 60);
+  const s = Math.floor(((distance % (24 * 60 * 60)) % (60 * 60)) % 60);
+
+  day.innerHTML = `${d}`.padStart(2, "0");
+  hour.innerHTML = `${h}`.padStart(2, "0");
+  minute.innerHTML = `${m}`.padStart(2, "0");
+  second.innerHTML = `${s}`.padStart(2, "0");
+};
+setInterval(timer, 1000);
