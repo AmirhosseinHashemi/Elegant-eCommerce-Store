@@ -1,9 +1,13 @@
+.carousel {
+  overflow: hidden;
+}
+
 .carousel__slides {
   display: flex;
   gap: 1.6rem;
   margin-top: 4rem;
   padding: 0;
-  overflow: hidden;
+  transition: all 0.3s;
 }
 
 .carousel__header {

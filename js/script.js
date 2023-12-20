@@ -5,6 +5,7 @@ const arrowes = document.querySelectorAll(".nav__arrow");
 
 const carouselDots = document.querySelectorAll(".carousel__dot");
 const carouselSlides = document.querySelectorAll(".carousel__slide");
+const carouselContainer = document.querySelector(".carousel__slides");
 
 const brandsList = document.querySelector(".brands__list");
 const brandsLogo = document.querySelectorAll(".brands__logo");
@@ -48,7 +49,10 @@ arrowes.forEach((icon) => {
 carouselDots.forEach((dot) => {
   dot.addEventListener("click", function (e) {
     const dataDot = e.target.dataset.carouselDot - 1;
-    carouselSlides[dataDot].scrollIntoView({ behavior: "smooth" });
+    const slideWidth = carouselSlides[dataDot].clientWidth + 16; // element's width + gap
+    const movment = dataDot * slideWidth;
+
+    carouselContainer.style.transform = `translateX(-${movment}px)`;
 
     carouselDots.forEach((dot) => dot.classList.remove("active"));
     e.target.classList.add("active");
