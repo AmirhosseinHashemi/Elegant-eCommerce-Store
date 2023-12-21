@@ -54,10 +54,9 @@ arrowes.forEach((icon) => {
 carouselDots.forEach((dot) => {
   dot.addEventListener("click", function (e) {
     const dataDot = e.target.dataset.carouselDot - 1;
-    const slideWidth = carouselSlides[dataDot].clientWidth + 16; // element's width + gap
-    const movment = dataDot * slideWidth;
-
-    carouselContainer.style.transform = `translateX(-${movment}px)`;
+    carouselSlides.forEach((s) => {
+      s.style.transform = `translateX(-${dataDot * 100}%)`;
+    });
 
     carouselDots.forEach((dot) => dot.classList.remove("active"));
     e.target.classList.add("active");
