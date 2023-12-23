@@ -67,9 +67,9 @@ section {
 
 .nav__logo {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
   font-weight: 500;
   color: #000000;
+  font-size: 1.6rem;
 }
 
 .nav__cart img {
@@ -265,6 +265,9 @@ section {
     opacity: 1;
     visibility: visible;
     background-color: transparent;
+  }
+  .nav__logo {
+    font-size: 2.4rem;
   }
   .nav__bottom,
   .nav__btn--hamburger,
@@ -785,7 +788,6 @@ section {
 
 .footer__logo {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
   font-weight: 500;
   color: #000000;
   color: #fff;

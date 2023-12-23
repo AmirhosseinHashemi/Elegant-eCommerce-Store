@@ -16,6 +16,7 @@
 
 .nav__logo {
   @include logo();
+  font-size: 1.6rem;
 }
 
 .nav__cart img {
@@ -211,6 +212,10 @@
     opacity: 1;
     visibility: visible;
     background-color: transparent;
+  }
+
+  .nav__logo {
+    font-size: 2.4rem;
   }
 
   .nav__bottom,
