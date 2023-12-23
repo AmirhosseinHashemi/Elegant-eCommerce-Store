@@ -27,6 +27,12 @@
   color: $color-secondary-orange;
 }
 
+.nav__user,
+.nav__desktop-form,
+.nav__search-icon {
+  display: none;
+}
+
 //---------------------------------------------------- Navigation menu mobile
 
 .nav__menu {
@@ -195,4 +201,88 @@
 .nav__social li {
   width: 2.4rem;
   height: 2.4rem;
+}
+
+//---------------------------------------------------- Responsive: width > 768
+@media only screen and (min-width: 768px) {
+  .nav__menu {
+    position: relative;
+
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+  }
+
+  .nav__bottom,
+  .nav__btn--hamburger,
+  .nav__header,
+  .nav__search-box,
+  .nav__drop-down {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .nav__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+
+    padding-bottom: 0;
+    cursor: pointer;
+    border: none;
+  }
+
+  .nav__arrow {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .nav__right {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .nav__top {
+    display: block;
+  }
+
+  .nav__user {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav__desktop-form.open {
+    display: block;
+  }
+
+  .nav__desktop-form input {
+    width: 6rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav__search-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav__drop-down.open {
+    position: absolute;
+    top: 2.4rem;
+    left: 0;
+    min-width: 31.2rem;
+
+    display: flex;
+
+    padding: 1.6rem;
+    background-color: #fff;
+    border-radius: 1.2rem;
+  }
 }

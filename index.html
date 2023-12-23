@@ -156,13 +156,44 @@
           </div>
         </div>
         <!-- end mobile menu nav -->
+        <div class="nav__right">
+          <form class="nav__desktop-form">
+            <label for="search">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+            </label>
+          </form>
 
-        <button class="nav__cart btn--cart">
-          <img src="./assets/icons/shopping bag.svg" alt="shopping bag logo" />
-          <span class="btn--number" aria-label="number of shopping list"
-            >2</span
-          >
-        </button>
+          <button type="button" aria-label="search button">
+            <img
+              class="nav__search-icon"
+              src="./assets/icons/search 02.svg"
+              alt="search icon"
+            />
+          </button>
+
+          <button type="button" aria-label="user account button">
+            <img
+              class="nav__user"
+              src="./assets/icons/user-circle.svg"
+              alt="user icon"
+            />
+          </button>
+
+          <button class="nav__cart btn--cart" aria-label="cart button">
+            <img
+              src="./assets/icons/shopping bag.svg"
+              alt="shopping bag logo"
+            />
+            <span class="btn--number" aria-label="number of shopping list"
+              >2</span
+            >
+          </button>
+        </div>
       </nav>
     </header>
 

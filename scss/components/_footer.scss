@@ -98,3 +98,10 @@
 .author {
   color: $color-neutral-gray-4;
 }
+
+//---------------------------------------------------- Responsive: width > 768px
+@media only screen and (min-width: 768px) {
+  .footer__list {
+    flex-direction: row;
+  }
+}

@@ -40,3 +40,21 @@
   @include headline--5;
   color: $color-primary-black;
 }
+
+//---------------------------------------------------- Responsive: width > 450
+
+@media only screen and (min-width: 450px) {
+  .carousel__dots {
+    display: none;
+  }
+
+  .carousel__header {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .carousel__slides {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

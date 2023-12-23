@@ -3,6 +3,9 @@ const menu = document.querySelector(".nav__menu");
 const menuList = document.querySelector(".nav__list");
 const arrowes = document.querySelectorAll(".nav__arrow");
 
+const headerSearchIcon = document.querySelector(".nav__search-icon");
+const headerForm = document.querySelector(".nav__desktop-form");
+
 const carouselDots = document.querySelectorAll(".carousel__dot");
 const carouselSlides = document.querySelectorAll(".carousel__slide");
 const carouselContainer = document.querySelector(".carousel__slides");
@@ -101,3 +104,8 @@ const timer = function () {
   second.innerHTML = `${s}`.padStart(2, "0");
 };
 setInterval(timer, 1000);
+
+// Desktop search input
+headerSearchIcon.addEventListener("click", function () {
+  headerForm.classList.toggle("open");
+});
