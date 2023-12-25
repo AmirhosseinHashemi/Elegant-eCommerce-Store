@@ -4,6 +4,7 @@
   padding-bottom: 4rem;
   background: $color-gradient-1;
   height: 69.2rem;
+  overflow: hidden;
 }
 .hero::after {
   content: "";
@@ -61,5 +62,40 @@
 
   .hero::after {
     content: none;
+  }
+}
+
+//---------------------------------------------------- Responsive: width >= 1440px
+@media only screen and (min-width: 1440px) {
+  .hero__content {
+    position: relative;
+    align-items: flex-start;
+    transform: translate(50%, 50%);
+
+    z-index: 1;
+  }
+
+  .hero {
+    min-height: 82rem;
+  }
+
+  .hero::after {
+    content: "";
+    background-image: url(../assets/images/Paste_image-desktop-removebg-preview2.png);
+    top: 0;
+    z-index: 0;
+  }
+
+  .hero__title {
+    @include headline--1;
+    text-align: left;
+  }
+
+  .hero__caption {
+    @include text-20($fw-regular);
+  }
+
+  .hero__btn {
+    @include btn-medium;
   }
 }

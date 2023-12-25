@@ -48,3 +48,41 @@
   @include btn-small;
   color: $color-neutral-gray-4;
 }
+
+//---------------------------------------------------- Responsive: width >= 1440px
+@media only screen and (min-width: 1440px) {
+  .cta {
+    position: relative;
+    z-index: 0;
+  }
+
+  .cta__title {
+    @include headline--4;
+  }
+
+  .cta__caption {
+    @include text-18($fw-regular);
+  }
+
+  .cta__form {
+    max-width: none;
+    width: 48.8rem;
+
+    margin-top: 3.2rem;
+  }
+
+  .cta__form > label,
+  .cta__input {
+    width: 100%;
+  }
+
+  .cta::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 144rem;
+
+    content: url("../assets/images/cta.png");
+    z-index: -1;
+  }
+}

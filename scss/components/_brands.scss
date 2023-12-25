@@ -47,3 +47,21 @@
     display: none;
   }
 }
+
+//---------------------------------------------------- Responsive: width > 1440
+
+@media only screen and (min-width: 1440px) {
+  .brands {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .brands__list {
+    gap: 2.4rem;
+  }
+
+  .brands__logo {
+    width: 16.7rem;
+    height: 6.4rem;
+  }
+}

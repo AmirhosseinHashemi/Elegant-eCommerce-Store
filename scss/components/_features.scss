@@ -43,3 +43,27 @@
     grid-template-columns: 1fr;
   }
 }
+
+//---------------------------------------------------- Responsive: width >= 1440px
+@media only screen and (min-width: 1440px) {
+  .features {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .features__grid {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.4rem;
+  }
+
+  .features__card {
+    gap: 0.8rem;
+    min-width: 26.2rem;
+
+    padding: 4.8rem 3.2rem;
+  }
+
+  .features__icon {
+    margin-bottom: 1.6rem;
+  }
+}

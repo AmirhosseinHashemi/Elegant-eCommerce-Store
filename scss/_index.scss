@@ -30,7 +30,7 @@
   background-color: $color-neutral-gray-2;
 }
 
-.shop__card > img {
+.shop__card > picture > img {
   width: 100%;
 }
 
@@ -290,7 +290,7 @@
 //---------------------------------------------------- Responsive: width > 768
 @media only screen and (min-width: 768px) {
   .shop__grid {
-    grid-auto-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 1.6rem;
   }
 
@@ -321,5 +321,154 @@
   .newsfeed__gallery {
     grid-template-columns: 1fr 1fr;
     column-gap: 1.6rem;
+  }
+}
+
+//---------------------------------------------------- Responsive: width >= 1440px
+@media only screen and (min-width: 1440px) {
+  .header {
+    padding: 1.6rem 16rem;
+  }
+
+  //-----------------
+
+  .shop {
+    gap: 4.8rem;
+    padding-bottom: 0;
+  }
+
+  .shop__grid {
+    grid-template-columns: repeat(2, 54.8rem);
+    column-gap: 1.6rem;
+  }
+
+  .shop__content > h3 {
+    @include headline--5;
+  }
+
+  .shop__content > a {
+    @include text-16($fw-medium);
+  }
+
+  .shop__card {
+    justify-self: stretch;
+    max-width: 54.8rem;
+  }
+
+  .shop__card--1 {
+    height: 66.4rem;
+  }
+
+  .shop__card--2,
+  .shop__card--3 {
+    height: 31.9rem;
+  }
+
+  //-----------------
+
+  .best {
+    padding-top: 4.8rem;
+    padding-bottom: 10rem;
+
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .best__item {
+    width: 26.2rem;
+  }
+
+  .best__view {
+    height: 34.9rem;
+  }
+
+  .best__content > p:nth-child(2) {
+    @include text-16($fw-semiBold);
+  }
+
+  .best__content > p {
+    text-wrap: wrap;
+  }
+
+  .best__view--1::after {
+    content: url(../assets/images/best-desktop-1.png);
+  }
+
+  .best__view--2::after {
+    content: url(../assets/images/best-desktop-2.png);
+  }
+
+  .best__view--3::after {
+    content: url(../assets/images/best-desktop-3.png);
+  }
+
+  .best__view--4::after {
+    content: url(../assets/images/best-desktop-4.png);
+  }
+
+  .best__view--5::after {
+    content: url(../assets/images/best-desktop-5.png);
+  }
+
+  .best__view--6::after {
+    content: url(../assets/images/best-desktop-6.png);
+  }
+
+  .best__view--7::after {
+    content: url(../assets/images/best-desktop-7.png);
+  }
+
+  .best__view--8::after {
+    content: url(../assets/images/best-desktop-8.png);
+  }
+
+  //-----------------
+
+  .off {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10.2rem;
+
+    padding: 0;
+  }
+
+  .off__img {
+    display: block;
+    margin-top: 0;
+
+    min-width: 72rem;
+    height: 53.2rem;
+  }
+
+  .off__content {
+    flex-basis: 50%;
+
+    justify-content: center;
+  }
+
+  .off__title {
+    @include headline--5;
+  }
+
+  .off__caption {
+    @include text-20($fw-regular);
+  }
+
+  .off__btn {
+    @include btn-small;
+  }
+
+  //-----------------
+  .newsfeed__title {
+    @include headline--4;
+  }
+
+  .newsfeed__caption {
+    @include text-20($fw-regular);
+  }
+
+  .newsfeed__gallery {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.4rem;
   }
 }

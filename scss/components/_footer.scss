@@ -105,3 +105,52 @@
     flex-direction: row;
   }
 }
+
+//---------------------------------------------------- Responsive: width >= 1440px
+@media only screen and (min-width: 1440px) {
+  .footer {
+    gap: 4.9rem;
+    padding: 8rem 16rem 3.2rem 16rem;
+  }
+
+  .footer__top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__slogan {
+    flex-direction: row;
+    gap: 3.2rem;
+  }
+
+  .footer__line {
+    transform: rotate(90deg);
+  }
+
+  .footer__list {
+    gap: 4rem;
+  }
+
+  .footer__bottom {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.6rem 0;
+  }
+
+  .footer__bottom-nav {
+    gap: 2.4rem;
+    padding-top: 0;
+  }
+
+  .footer__copyright {
+    display: flex;
+    gap: 2.8rem;
+  }
+
+  .footer__copyright > p:nth-child(odd) {
+    order: -1;
+  }
+}

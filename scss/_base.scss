@@ -53,4 +53,8 @@ ul {
 //---------------------------------------------------- Set section default style
 section {
   padding: 3.2rem;
+
+  @media only screen and (min-width: 1440px) {
+    padding: 16rem;
+  }
 }

@@ -90,3 +90,14 @@
 .product__view--3::after {
   content: url(../assets/images/product-3.png);
 }
+
+//---------------------------------------------------- Responsive: width > 1440px
+@media only screen and (min-width: 1440px) {
+  .product {
+    width: 26.2rem;
+  }
+
+  .product__view {
+    height: 34.9rem;
+  }
+}
