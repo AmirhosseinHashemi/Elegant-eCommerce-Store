@@ -57,9 +57,10 @@ arrowes.forEach((icon) => {
 carouselDots.forEach((dot) => {
   dot.addEventListener("click", function (e) {
     const dataDot = e.target.dataset.carouselDot - 1;
-    carouselSlides.forEach((s) => {
-      s.style.transform = `translateX(-${dataDot * 100}%)`;
-    });
+    const movement =
+      (carouselContainer.scrollWidth - carouselContainer.clientWidth) / 2;
+
+    carouselContainer.style.transform = `translateX(-${movement * dataDot}px)`;
 
     carouselDots.forEach((dot) => dot.classList.remove("active"));
     e.target.classList.add("active");

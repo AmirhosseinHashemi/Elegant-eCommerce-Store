@@ -663,6 +663,7 @@ section {
 }
 .carousel {
   padding-right: 0;
+  overflow: hidden;
 }
 
 .carousel__slides {
@@ -670,7 +671,7 @@ section {
   gap: 1.6rem;
   margin-top: 4rem;
   padding: 0;
-  overflow: hidden;
+  transition: all 2s;
 }
 
 .carousel__slide {
