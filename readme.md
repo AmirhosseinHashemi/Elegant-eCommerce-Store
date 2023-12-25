@@ -17,6 +17,3 @@ I think it is a good opportunity to learning figma because I have never used it 
 
 ![](./assets/images/screenshot-desktop.png)
 
-### mobile(375px)
-
-![](./assets/images/Paste_image-mobile-removebg-preview.png)
