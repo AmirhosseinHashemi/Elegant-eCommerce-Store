@@ -91,7 +91,7 @@ brandsBtn.forEach((btn) => {
 
 const timer = function () {
   const now = new Date();
-  const future = new Date("2024-01-01T00:00:00");
+  const future = new Date("2024-03-19T00:00:00");
   const distance = (future.getTime() - now.getTime()) / 1000;
 
   const d = Math.floor(distance / (24 * 60 * 60));
